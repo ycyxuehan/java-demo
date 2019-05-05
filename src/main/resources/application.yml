@@ -1,0 +1,19 @@
+# Tomcat
+server:
+  tomcat:
+    uri-encoding: UTF-8
+    max-threads: 1000
+    min-spare-threads: 30
+  port: 8080
+  servlet:
+    context-path: /
+
+# mysql
+spring:
+  application:
+    name: "@pom.artifactId@ - @pom.version@"
+#  messages:
+#    basename: i18n/messages
+  # 环境 dev|test|prod
+  profiles:
+    active: dev
